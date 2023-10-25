@@ -10,7 +10,7 @@ Start working on the HTML markup of your personal website.
    > ❗️ Be careful never to work on your main branch. You should always introduce new features
    > through a feature branch and a pull request.
 2. Think about the content you want to put on your website and its structure. You can use
-   [excalidraw](https://excalidraw.com/) to create a draft of your personal website. Don't worry
+   [excalidraw](Y) to create a draft of your personal website. Don't worry
    about the styling - we will take care of that later. If you need some ideas, refer to the
    wireframe down below. Don't spend too long on this task, it more important to start coding. You
    can always add new features to your draft later.
