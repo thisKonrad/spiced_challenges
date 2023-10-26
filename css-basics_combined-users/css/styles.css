@@ -59,6 +59,7 @@ li {
 }
 
 .location {
+  float: left;
   font-size: 10px;
   font-weight: 600;
   text-align: end;
