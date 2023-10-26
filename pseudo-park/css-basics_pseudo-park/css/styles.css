@@ -17,17 +17,38 @@
   border: 2px dashed silver;
   overflow: hidden;
   border-radius: 8px;
-  background-color: lightgoldenrodyellow;
+  border: yellow dashed 0.25rem;
+  background-color: palegoldenrod;
 }
 
 .animal {
   padding: 16px;
+  font-size: 32px;
 
   /*
     The animals are very small.
     The size of the emojis is controlled via the font size.
     Set the font size to 32px.
   */
+}
+.giraffe {
+  text-align: center;
+}
+.dino {
+  text-align: right;
+}
+
+.crocodile:hover {
+  cursor: pointer;
+  background: lightblue;
+}
+.dino:hover {
+  cursor: pointer;
+  background: lightsalmon;
+}
+.giraffe:hover {
+  cursor: pointer;
+  background: lightgreen;
 }
 
 /*
