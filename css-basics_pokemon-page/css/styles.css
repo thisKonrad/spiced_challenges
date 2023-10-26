@@ -14,6 +14,7 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: monospace;
   font-size: 1rem;
@@ -37,9 +38,14 @@ h2 {
 - Add a padding of 10px
 - Center the text of the heading
 */
+h1 {
+  background-color: white;
+  margin-top: 0;
+  padding: 10px;
+}
 
 .title {
-  /* your solution */
+  text-align: center;
 }
 
 /* ------- Sections ------- */
