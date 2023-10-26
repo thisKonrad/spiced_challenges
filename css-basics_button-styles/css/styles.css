@@ -69,8 +69,15 @@ button {
 .button4 {
   /*Style me! Can you add a shadow to this button? Maybe play around with the shadow properties, as well? You can even color the shadow, make it bigger or smaller, ... */
   cursor: pointer;
-  box-shadow: 0px 0px 4px rgba(255, 255, 255), 0px 0px 6px rgba(0, 0, 0),
-    0px 0px 8px rgba(255, 255, 255), 0px 0px 12px rgba(0, 0, 0, 0.362);
+  box-shadow: 0px 0px 2px rgb(0, 0, 0), 0px 0px 4px rgba(255, 255, 255),
+    0px 0px 6px rgb(162, 0, 255), 0px 0px 8px rgba(255, 255, 255),
+    0px 0px 12px rgba(108, 64, 255, 0.362);
+  border-radius: 6px;
+  color: white;
+  background-color: rgba(119, 33, 240, 0.728);
+}
+.button4:active {
+  transform: scale(0.99);
 }
 
 /* Feel free to play around with other properties, as well. */
