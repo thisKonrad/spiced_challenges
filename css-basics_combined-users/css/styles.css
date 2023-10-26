@@ -47,18 +47,19 @@ li {
 }
 
 .name {
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
   margin: 0;
 }
 
 .bio {
-  font-size: 14px;
+  margin: 6px 0;
+  font-size: 12px;
   color: darkslategray;
 }
 
 .location {
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 600;
   text-align: end;
   margin: 0;
@@ -70,11 +71,10 @@ li {
   Make .user elements inside the aside smaller:
     - reduce the max-width to 250px
     - reduce the padding to 12px
-
     - reduce the border-radius to 4px
-
     - reduce the font-size of the .name to 16px
     - reduce the font-size of the .bio to 12px
+
     - set the margin of the .bio to "6px 0"
     - reduce the font-size of the .location to 10px
   
