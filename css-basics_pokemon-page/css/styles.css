@@ -65,6 +65,9 @@ section {
   border-left: 5px solid orange;
   background-color: white;
 }
+.favourites {
+  border-left: 5px solid gold;
+}
 
 /* ------- Headings Part 2 ------- */
 
