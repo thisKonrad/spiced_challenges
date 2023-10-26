@@ -88,7 +88,7 @@ section {
   border-right: 3px solid gold;
 }
 
-.favourites:nth-child(1) {
+.favourites:nth-child() {
   border-left: 3px solid orange;
   border-right: 3px solid orange;
 }
