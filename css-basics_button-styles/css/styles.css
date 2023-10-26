@@ -1,5 +1,9 @@
 /* Please scroll down to the start of your exercise! */
 
+/* import font */
+
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -31,6 +35,7 @@ button {
 
 .button1 {
   /*Style me! Change my border, set a border radius or what you want to try out. :) */
+  cursor: pointer;
   width: 12rem;
   height: 4rem;
   border: 0.8rem outset rgb(102, 102, 102);
@@ -39,14 +44,16 @@ button {
 
 .button2 {
   /*Style me! Change my color, or my background-color. Or both! You can test out different color modes here - like HEX, RGB, ... */
+  cursor: pointer;
   padding: 0.45rem;
   color: white;
-  text-shadow: 0em 0em 4px black;
+  text-shadow: 1px 1px 4px black;
   background-image: linear-gradient(
-    rgb(177, 177, 255),
-    rgb(162, 199, 162),
-    rgb(216, 216, 255)
+    rgb(6, 218, 255),
+    rgb(249, 255, 207),
+    #6f6fff
   );
+  border: none;
 }
 
 .button3 {
