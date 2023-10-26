@@ -60,6 +60,10 @@ h1 {
 
 section {
   /* your solution */
+  margin: 10px;
+  padding: 20px;
+  border-left: 5px solid orange;
+  background-color: white;
 }
 
 /* ------- Headings Part 2 ------- */
