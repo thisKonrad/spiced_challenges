@@ -65,6 +65,10 @@ li {
   margin: 0;
 }
 
+.bio_hide {
+  visibility: hidden;
+}
+
 /*
   Part 1
 
@@ -74,7 +78,6 @@ li {
     - reduce the border-radius to 4px
     - reduce the font-size of the .name to 16px
     - reduce the font-size of the .bio to 12px
-
     - set the margin of the .bio to "6px 0"
     - reduce the font-size of the .location to 10px
   
