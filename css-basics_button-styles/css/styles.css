@@ -58,6 +58,11 @@ button {
 
 .button3 {
   /*Style me! You can test out changing the font, or font size, ...*/
+  cursor: pointer;
+  font-family: "Bruno Ace SC", sans-serif;
+  font-weight: bolder;
+  text-shadow: 0px 0px 8px white;
+  background: black;
 }
 
 .button4 {
