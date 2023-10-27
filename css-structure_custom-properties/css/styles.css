@@ -19,6 +19,7 @@ body {
 
 header {
   /* background: rgb(48 48 48 / 100%); */
+  background: var(--color-black-light);
 }
 
 h1 {
@@ -36,7 +37,7 @@ h2 {
 }
 
 strong {
-  color: #8236ff;
+  color: var(--color-primary);
 }
 
 section {
@@ -89,7 +90,8 @@ a {
 
 a:hover,
 a:focus-visible {
-  background-color: rgb(48 48 48);
+  /* background-color: rgb(48 48 48); */
+  background: var(--color-black-light);
   text-decoration: none;
 }
 
