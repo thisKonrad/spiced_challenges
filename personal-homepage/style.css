@@ -44,6 +44,12 @@ body {
   margin: 0.5rem;
 }
 
+.link_img {
+  width: 80px;
+  height: 80px;
+  margin: 4px;
+}
+
 main {
   grid-area: 2/ 2/ 2/ 4;
   display: flex;
