@@ -68,7 +68,10 @@ main {
 }
 
 .box--bottom-left {
+  position: absolute;
   background-color: #2874a6;
+  top: 520px;
+  right: 420px;
 }
 
 .box--bottom-center {
@@ -79,5 +82,5 @@ main {
   position: absolute;
   background-color: #1b4f72;
   top: 520px;
-  right: 420px;
+  left: 420px;
 }
