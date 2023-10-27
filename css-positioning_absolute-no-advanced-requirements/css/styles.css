@@ -14,6 +14,7 @@ main {
   height: 600px;
   border: 1px solid black;
   margin: 5em auto;
+
   position: relative;
 }
 
@@ -36,19 +37,32 @@ main {
 */
 
 .box--top-left {
+  position: absolute;
   background-color: #aed6f1;
+  top: 0px;
+  left: 0px;
 }
 
 .box--top-center {
+  position: absolute;
   background-color: #85c1e9;
+  right: 50%;
+  top: 0px;
 }
 
 .box--top-right {
+  position: absolute;
   background-color: #5dade2;
+  top: 0px;
+  /* box width = 80 main width = 500 difference = 420 */
+  left: 420px;
 }
 
 .box--center {
+  position: absolute;
   background-color: #3498db;
+  top: 300px;
+  right: 50%;
 }
 
 .box--bottom-left {
