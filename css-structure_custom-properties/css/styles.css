@@ -7,7 +7,7 @@
 /*new root selector */
 :root {
   --color-black-light: rgb(48 48 48);
-  --color-primary: #8236ff;
+  --color-primary: rgb(130, 54, 255);
   --color-white: white;
 }
 
@@ -24,7 +24,7 @@ header {
 
 h1 {
   text-align: center;
-  color: white;
+  color: var(--color-white);
   line-height: 1.4;
   margin: 0;
   letter-spacing: 0.025em;
@@ -70,7 +70,7 @@ figure {
 }
 
 figcaption {
-  color: rgb(255 255 255);
+  color: var(--color-white);
 }
 
 nav {
@@ -84,8 +84,8 @@ a {
   font-size: smaller;
   padding: 8px;
   border-radius: 4px;
-  background-color: hsl(263, 100%, 61%);
-  color: #fff;
+  background-color: rgb(132, 56, 255);
+  color: var(--color-white);
 }
 
 a:hover,
@@ -97,7 +97,7 @@ a:focus-visible {
 
 mark {
   background-color: rgb(130, 54, 255);
-  color: #ffffff;
+  color: var(--color-white);
   border-radius: 4px;
   letter-spacing: 0.025em;
 }
