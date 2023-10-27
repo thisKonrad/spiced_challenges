@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+/*new root selector */
+:root {
+  --color-black-light: rgb(48 48 48);
+  --color-primary: #8236ff;
+  --color-white: white;
+}
+
 body {
   margin: 0;
   font-family: system-ui;
@@ -11,7 +18,7 @@ body {
 }
 
 header {
-  background: rgb(48 48 48 / 100%);
+  /* background: rgb(48 48 48 / 100%); */
 }
 
 h1 {
