@@ -17,6 +17,7 @@ body {
  * document is scrolled.
  */
 .header {
+  z-index: 900;
   position: fixed;
   top: 0px;
   left: 800px;
