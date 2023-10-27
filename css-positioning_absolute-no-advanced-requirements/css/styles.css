@@ -42,11 +42,13 @@ main {
   top: 0px;
   left: 0px;
 }
+/* box width = 80 main width = 500 difference = 420 */
+/* box height = 80, main height = 600 diff. = 520 */
 
 .box--top-center {
   position: absolute;
   background-color: #85c1e9;
-  right: 50%;
+  right: 210px;
   top: 0px;
 }
 
@@ -54,15 +56,15 @@ main {
   position: absolute;
   background-color: #5dade2;
   top: 0px;
-  /* box width = 80 main width = 500 difference = 420 */
+
   left: 420px;
 }
 
 .box--center {
   position: absolute;
   background-color: #3498db;
-  top: 300px;
-  right: 50%;
+  top: calc(520px / 2);
+  right: calc(420px / 2);
 }
 
 .box--bottom-left {
@@ -74,5 +76,8 @@ main {
 }
 
 .box--bottom-right {
+  position: absolute;
   background-color: #1b4f72;
+  top: 520px;
+  right: 420px;
 }
