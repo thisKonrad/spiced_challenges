@@ -38,49 +38,52 @@ main {
 
 .box--top-left {
   position: absolute;
-  background-color: #aed6f1;
   top: 0px;
   left: 0px;
+  background-color: #aed6f1;
 }
+
 /* box width = 80 main width = 500 difference = 420 */
 /* box height = 80, main height = 600 diff. = 520 */
 
 .box--top-center {
   position: absolute;
-  background-color: #85c1e9;
   right: 210px;
   top: 0px;
+  background-color: #85c1e9;
 }
 
 .box--top-right {
   position: absolute;
-  background-color: #5dade2;
   top: 0px;
-
   left: 420px;
+  background-color: #5dade2;
 }
 
 .box--center {
   position: absolute;
-  background-color: #3498db;
   top: calc(520px / 2);
   right: calc(420px / 2);
+  background-color: #3498db;
 }
 
 .box--bottom-left {
   position: absolute;
-  background-color: #2874a6;
   top: 520px;
   right: 420px;
+  background-color: #2874a6;
 }
 
 .box--bottom-center {
+  position: absolute;
+  top: 520px;
+  left: 210px;
   background-color: #21618c;
 }
 
 .box--bottom-right {
   position: absolute;
-  background-color: #1b4f72;
   top: 520px;
   left: 420px;
+  background-color: #1b4f72;
 }
