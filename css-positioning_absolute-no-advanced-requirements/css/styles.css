@@ -14,6 +14,7 @@ main {
   height: 600px;
   border: 1px solid black;
   margin: 5em auto;
+
   position: relative;
 }
 
@@ -36,29 +37,53 @@ main {
 */
 
 .box--top-left {
+  position: absolute;
+  top: 0px;
+  left: 0px;
   background-color: #aed6f1;
 }
 
+/* box width = 80 main width = 500 difference = 420 */
+/* box height = 80, main height = 600 diff. = 520 */
+
 .box--top-center {
+  position: absolute;
+  right: 210px;
+  top: 0px;
   background-color: #85c1e9;
 }
 
 .box--top-right {
+  position: absolute;
+  top: 0px;
+  left: 420px;
   background-color: #5dade2;
 }
 
 .box--center {
+  position: absolute;
+  top: calc(520px / 2);
+  right: calc(420px / 2);
   background-color: #3498db;
 }
 
 .box--bottom-left {
+  position: absolute;
+  top: 520px;
+  right: 420px;
   background-color: #2874a6;
 }
 
 .box--bottom-center {
+  position: absolute;
+  top: 520px;
+  left: 210px;
   background-color: #21618c;
 }
 
 .box--bottom-right {
+  position: absolute;
+  top: 520px;
+  left: 420px;
   background-color: #1b4f72;
 }
