@@ -47,6 +47,7 @@ h1{
 
 section {
   /* your solution */
+  float: left;
 }
 
 /* ------- Headings Part 2 ------- */
