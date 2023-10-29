@@ -48,6 +48,7 @@ body {
  * Define the card as reference frame for descendant elements, that require absolute positioning.
  */
 .card {
+  position: absolute;
   margin: 20px 10%;
   border: 5px solid #252629;
   padding: 3% 10%;
