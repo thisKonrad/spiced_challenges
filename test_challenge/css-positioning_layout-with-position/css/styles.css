@@ -63,6 +63,7 @@ body {
  * Place the bookmark in the top, right corner of each card.
  */
 .card__bookmark {
+  position: absolute;
   border: 2px solid #ff4a11;
   font-size: 2em;
   padding: 6px 12px;
