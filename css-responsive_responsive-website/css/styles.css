@@ -243,13 +243,8 @@ fairly essential to completing this challenge. */
 CSS when certain conditions that we declare are met - such as a certain viewport 
 width, etc. */
 
-
-/* Media Query Desktop */
-/* --- */
-
-/* Media Query Tablet */
-/* --- */
-@media only screen and (max-width: 360px) {
+/* Media Query Mobile*/
+@media only screen and (max-width: 480px) {
 
   :root{
   --header-brand: 2rem;
@@ -288,7 +283,8 @@ width, etc. */
     position: absolute;
   }
   .footer-nav {
-    gap: 45%;
+    flex-direction: row;
+    gap: 50%;
   }
  
 }
@@ -301,3 +297,25 @@ width, etc. */
   }
  
 }
+
+/* Media Query Tablet:  */
+@media screen and (min-width: 720px) {
+
+  .intro-text, .product-card {
+    width: 45%;
+  }
+
+  .card-section {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: -12%;
+  }
+
+}
+
+/* Media Query Desktop */
+
+
+
