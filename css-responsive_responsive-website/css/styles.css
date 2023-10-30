@@ -108,6 +108,7 @@ body {
 .navbar {
   display: flex;
   justify-content: space-around;
+
   position: fixed;
   top: var(--header-height);
   width: 100%;
@@ -251,3 +252,9 @@ width, etc. */
 /* --- */
 /* Replace this comment with your media query. */
 /* --- */
+
+@media only screen and (max-width: 360px) {
+  .navbar {    
+    flex-wrap: wrap;
+}
+}
