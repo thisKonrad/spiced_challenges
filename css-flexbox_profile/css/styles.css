@@ -55,7 +55,18 @@ body {
 
 .tech_stack_wrap {
   display: flex;
-  
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;  
+  flex-wrap: wrap;
+  gap: 10px;
+}
+*
+.tech_stack_wrap > h2 {
+  align-self: flex-start;
+}
+.tech_stack_wrap > li {
+  align-self: center;
 }
 
 .tech-stack__list {
@@ -64,6 +75,7 @@ body {
 }
 
 .tech-stack__list-item {
+  align-self: flex-start;
   padding: 10px;
   background-color: var(--primary-dark);
   color: var(--white);
