@@ -30,7 +30,7 @@ body {
   color: var(--white);
 }
 
-
+/* first task: */
 .profile_wrap{
   display: flex;
   justify-content: space-evenly;
@@ -52,22 +52,25 @@ body {
   height: auto;
   margin: 12px;
 }
-
-.tech_stack_wrap {
+/* second task */
+.tech-stack__list {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-direction: row;  
   flex-wrap: wrap;
   gap: 10px;
 }
-*
-.tech_stack_wrap > h2 {
+.tech-stack > li{
+  align-self: center;
+  min-width: 8rem;
+}
+
+/* .tech_stack_wrap > h2 {
   align-self: flex-start;
 }
 .tech_stack_wrap > li {
   align-self: center;
-}
+} */
 
 .tech-stack__list {
   list-style: none;
@@ -75,7 +78,6 @@ body {
 }
 
 .tech-stack__list-item {
-  align-self: flex-start;
   padding: 10px;
   background-color: var(--primary-dark);
   color: var(--white);
