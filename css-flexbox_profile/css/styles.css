@@ -33,11 +33,24 @@ body {
 
 .profile_wrap{
   display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 14px;
 }
+.profile_wrap > h2{
+  align-self: flex-start;
+}
+.profile_wrap > p{
+  margin: 12px;
+  align-self: flex-end;
+}
+
 .profile__image {
+  align-self: center;
   border-radius: 50%;
   max-width: 50%;
   height: auto;
+  margin: 12px;
 }
 
 .tech-stack__list {
