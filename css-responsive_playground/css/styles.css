@@ -95,6 +95,7 @@ h1 {
   width: 100%;
 }
 
+/* :::::: MEDIA QUERIES :::::: */
 /* second challenge*/
 @media only screen and (min-width: 599px) {
 
@@ -106,5 +107,14 @@ h1 {
 
   .box--two {
     width: 400px;
+  }
+}
+
+/* box three: */
+@media (orientation: landscape) {
+
+  .box--three {
+    width: 250px;
+    height: 50px;
   }
 }
