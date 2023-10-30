@@ -298,6 +298,8 @@ width, etc. */
  
 }
 
+
+
 /* Media Query Tablet:  */
 @media screen and (min-width: 720px) {
 
@@ -316,33 +318,39 @@ width, etc. */
 }
 
 /* Media Query Desktop */
-@media only screen and (max-width: 1620px ) {
+@media only screen and (min-width: 1620px ) {
+
   body {
    display: flex;
    justify-items: center;
-   padding-left: 20%;
+   flex-direction: row;
+   flex-wrap: wrap;
+  /* top | right | bottom | left */
+  padding-left: 30%;
   }
+
   .main-header {
-  width: 80%;
+  width: 70%;
   }
+
   .navbar {
-  width: 80%;
+  align-self: center;
+  width: 49%;
+  }
+  .intro-text {
+  width: 60%;
   }
 
-.intro-text {
-  width: 60%;
-}
+  .card-section {
+  width: 70%;
+  }
 
-.card-section {
-  width: 80%;
-}
+  .main-content {
+  width: 70%;
+  }
 
-.main-content {
-  width: 80%;
-}
+  .main-footer {
+  width: 70%;
+  }
 
-.main-footer {
-  width: 80%;
-
-}
-}
+} 
