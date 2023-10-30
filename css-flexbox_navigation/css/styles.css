@@ -23,6 +23,12 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.navigation__menu{
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+}
+
 a {
   color: inherit;
   text-decoration: none;
