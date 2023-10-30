@@ -29,8 +29,8 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 22px;
-
+  flex-shrink: shrink;
+  gap: 14px;
 }
 
 a {
