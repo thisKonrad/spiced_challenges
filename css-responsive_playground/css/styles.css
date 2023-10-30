@@ -103,6 +103,7 @@ h1 {
     width: 200px;
   }
 }
+
 @media only screen and (min-width: 1199px) {
 
   .box--two {
@@ -117,4 +118,14 @@ h1 {
     width: 250px;
     height: 50px;
   }
+}
+
+
+/* box number four */
+@media (prefers-color-scheme: dark) {
+
+  .box--four {
+    background-color: rgb(198, 112, 255);
+  }
+
 }
