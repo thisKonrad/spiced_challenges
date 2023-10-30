@@ -256,15 +256,29 @@ width, etc. */
   --regular-text: 0.6rem;
   --regular-line-height: 1rem;
 
-  --gap: 6px;
+  --gap: 4px;
 
   }
 
-  .navbar {    
+  body{
+   background-color: var(--navy-blue);
+  }
+
+  .navbar {   
+    width: 100%; 
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 
+  .main-content{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .main-footer {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
   }
@@ -299,7 +313,6 @@ width, etc. */
 }
 
 
-
 /* Media Query Tablet:  */
 @media screen and (min-width: 720px) {
 
@@ -328,6 +341,7 @@ width, etc. */
   padding-left: 30%;
   }
   .main-content{
+    margin-top: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
