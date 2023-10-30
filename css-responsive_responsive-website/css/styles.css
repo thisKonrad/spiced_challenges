@@ -275,9 +275,29 @@ width, etc. */
   }
 }
 
-@media (orientation: landscape) {
+@media (orientation: landscape){
+
+  :root{
+    --gap: 12px;
+  }
+
   .main-header {
     position: relative;
+  }
+  .navbar {
+    position: absolute;
+  }
+  .footer-nav {
+    gap: 45%;
+  }
+ 
+}
+
+@media (orientation: landscape),only screen and (max-width: 680px) {
+
+  .footer-nav {
+    flex-direction: row;
+    gap: 15%;
   }
  
 }
