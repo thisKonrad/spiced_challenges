@@ -243,6 +243,8 @@ fairly essential to completing this challenge. */
 CSS when certain conditions that we declare are met - such as a certain viewport 
 width, etc. */
 
+
+
 /* Media Query Mobile*/
 @media only screen and (max-width: 480px) {
 
@@ -284,6 +286,8 @@ width, etc. */
   }
 }
 
+
+/* landscape: */
 @media (orientation: landscape){
 
   :root{
