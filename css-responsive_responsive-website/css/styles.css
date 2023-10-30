@@ -321,12 +321,20 @@ width, etc. */
 @media only screen and (min-width: 1620px ) {
 
   body {
-   display: flex;
-   justify-items: center;
-   flex-direction: row;
-   flex-wrap: wrap;
-  /* top | right | bottom | left */
+  display: flex;
+  justify-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding-left: 30%;
+  }
+  .main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .--forest{
+    width: 120%;
   }
 
   .main-header {
