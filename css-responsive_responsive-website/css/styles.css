@@ -243,18 +243,14 @@ fairly essential to completing this challenge. */
 CSS when certain conditions that we declare are met - such as a certain viewport 
 width, etc. */
 
-/* Media Query Tablet */
-/* --- */
-/* Replace this comment with your media query. */
-/* --- */
 
 /* Media Query Desktop */
 /* --- */
-/* Replace this comment with your media query. */
-/* --- */
 
+/* Media Query Tablet */
+/* --- */
 @media only screen and (max-width: 360px) {
-  
+
   :root{
   --header-brand: 2rem;
   --header-brand-line-height: 3rem;
@@ -277,4 +273,11 @@ width, etc. */
     display: flex;
     flex-wrap: wrap;
   }
+}
+
+@media (orientation: landscape) {
+  .main-header {
+    position: relative;
+  }
+ 
 }
