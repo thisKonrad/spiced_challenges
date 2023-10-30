@@ -254,7 +254,27 @@ width, etc. */
 /* --- */
 
 @media only screen and (max-width: 360px) {
+  
+  :root{
+  --header-brand: 2rem;
+  --header-brand-line-height: 3rem;
+
+  --header-text: 0.8rem;
+  --header-text-line-height: 1rem;
+
+  --regular-text: 0.6rem;
+  --regular-line-height: 1rem;
+
+  --gap: 6px;
+
+  }
+
   .navbar {    
     flex-wrap: wrap;
-}
+  }
+
+  .main-footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
