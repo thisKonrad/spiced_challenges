@@ -316,6 +316,33 @@ width, etc. */
 }
 
 /* Media Query Desktop */
+@media only screen and (max-width: 1620px ) {
+  body {
+   display: flex;
+   justify-items: center;
+   padding-left: 20%;
+  }
+  .main-header {
+  width: 80%;
+  }
+  .navbar {
+  width: 80%;
+  }
 
+.intro-text {
+  width: 60%;
+}
 
+.card-section {
+  width: 80%;
+}
 
+.main-content {
+  width: 80%;
+}
+
+.main-footer {
+  width: 80%;
+
+}
+}
