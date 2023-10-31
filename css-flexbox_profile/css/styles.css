@@ -30,11 +30,47 @@ body {
   color: var(--white);
 }
 
+/* first task: */
+.profile_wrap{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 14px;
+}
+.profile_wrap > h2{
+  align-self: flex-start;
+}
+.profile_wrap > p{
+  margin: 12px;
+  align-self: flex-end;
+}
+
 .profile__image {
+  align-self: center;
   border-radius: 50%;
   max-width: 50%;
   height: auto;
+  margin: 12px;
 }
+/* second task */
+.tech-stack__list {
+  display: flex;
+  align-items: center;
+  flex-direction: row;  
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.tech-stack > li{
+  align-self: center;
+  min-width: 8rem;
+}
+
+/* .tech_stack_wrap > h2 {
+  align-self: flex-start;
+}
+.tech_stack_wrap > li {
+  align-self: center;
+} */
 
 .tech-stack__list {
   list-style: none;
