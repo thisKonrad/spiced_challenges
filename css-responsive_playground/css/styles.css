@@ -62,7 +62,7 @@ h1 {
 .box--one {
   background-color: lightblue;
 
-  width: 100px;
+  width: 45%;
   height: 100px;
 }
 
@@ -94,3 +94,39 @@ h1 {
 .box--five img {
   width: 100%;
 }
+
+/* :::::: MEDIA QUERIES :::::: */
+/* second challenge*/
+@media only screen and (min-width: 599px) {
+
+  .box--two {
+    width: 200px;
+  }
+}
+
+@media only screen and (min-width: 1199px) {
+
+  .box--two {
+    width: 400px;
+  }
+}
+
+/* box three: */
+@media (orientation: landscape) {
+
+  .box--three {
+    width: 250px;
+    height: 50px;
+  }
+}
+
+/* box number four */
+@media (prefers-color-scheme: dark) {
+
+  .box--four {
+    background-color: rgb(198, 112, 255);
+  }
+
+}
+
+
