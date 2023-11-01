@@ -89,8 +89,11 @@ body {
 
 .element-spiced {
   /* Add styles here element__spiced should be in row one and span the entire grid width */
+  grid-area: 1 / 1/ 1/ -1;
+
 }
 
 .element-20 {
-  /* Add styles here */
+  /* Add styles here .element__20 should start at row six and span two rows */
+  grid-row: 6 / span 2;
 }
