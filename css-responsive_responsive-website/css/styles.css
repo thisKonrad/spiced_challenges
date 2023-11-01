@@ -108,6 +108,7 @@ body {
 .navbar {
   display: flex;
   justify-content: space-around;
+
   position: fixed;
   top: var(--header-height);
   width: 100%;
@@ -242,12 +243,140 @@ fairly essential to completing this challenge. */
 CSS when certain conditions that we declare are met - such as a certain viewport 
 width, etc. */
 
-/* Media Query Tablet */
-/* --- */
-/* Replace this comment with your media query. */
-/* --- */
+
+
+/* Media Query Mobile*/
+@media only screen and (max-width: 480px) {
+
+  :root{
+  --header-brand: 2rem;
+  --header-brand-line-height: 3rem;
+
+  --header-text: 0.8rem;
+  --header-text-line-height: 1rem;
+
+  --regular-text: 0.6rem;
+  --regular-line-height: 1rem;
+
+  --gap: 4px;
+
+  }
+
+  body{
+   background-color: var(--navy-blue);
+  }
+
+  .navbar {   
+    width: 100%; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-content{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+
+/* landscape: */
+@media (orientation: landscape){
+
+  :root{
+    --gap: 12px;
+  }
+
+  .main-header {
+    position: relative;
+  }
+  .navbar {
+    position: absolute;
+  }
+  .footer-nav {
+    flex-direction: row;
+    gap: 50%;
+  }
+ 
+}
+
+@media (orientation: landscape),only screen and (max-width: 680px) {
+
+  .footer-nav {
+    flex-direction: row;
+    gap: 15%;
+  }
+ 
+}
+
+
+/* Media Query Tablet:  */
+@media screen and (min-width: 720px) {
+
+  .intro-text, .product-card {
+    width: 45%;
+  }
+
+  .card-section {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: -12%;
+  }
+
+}
 
 /* Media Query Desktop */
-/* --- */
-/* Replace this comment with your media query. */
-/* --- */
+@media only screen and (min-width: 1620px ) {
+
+  body {
+  display: flex;
+  justify-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 30%;
+  }
+  .main-content{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .--forest{
+    width: 120%;
+  }
+
+  .main-header {
+  width: 70%;
+  }
+
+  .navbar {
+  align-self: center;
+  width: 49%;
+  }
+  .intro-text {
+  width: 60%;
+  }
+
+  .card-section {
+  width: 70%;
+  }
+
+  .main-content {
+  width: 70%;
+  }
+
+  .main-footer {
+  width: 70%;
+  }
+
+} 
