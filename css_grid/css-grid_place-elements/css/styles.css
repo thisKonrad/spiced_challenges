@@ -89,7 +89,7 @@ body {
 
 .element-spiced {
   /* Add styles here element__spiced should be in row one and span the entire grid width */
-  grid-area: 1 / 1/ 1/ -1;
+  grid-area: 1 / 1/ -1/ 1;
 
 }
 
