@@ -43,6 +43,10 @@ body {
   min-height: 100vh;
 
   /* Add styles to the grid container */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 8px;
 }
 
 .teaser-grid__teaser {
