@@ -6,11 +6,7 @@ function totalBillCalc(){
 
     const mealPricePercentage = (mealPrice / 100);
 
-    console.log(mealPricePercentage)
-
     let tipPercentage = mealPricePercentage * tipAmount;
-
-    console.log(tipPercentage)
 
     let totalBill =  mealPrice + tipPercentage;
 
