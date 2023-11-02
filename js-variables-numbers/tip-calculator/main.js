@@ -15,9 +15,9 @@ function tipMealCalculation(){
 
     let totalCost = mealCost + tipTotal;
 
-    console.log(`Your total meal cost is about ${totalCost}€.`);
+    console.log(`Your total bill is about ${totalCost}€.`);
 
-    result.innerText = `Your total meal cost is about ${totalCost}€.`;
+    result.innerText = `Your total bill is about ${totalCost}€.`;
 
 }
 tipMealCalculation();
