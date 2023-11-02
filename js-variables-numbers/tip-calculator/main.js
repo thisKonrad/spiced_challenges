@@ -4,10 +4,17 @@ const tipAmount = 10;
 
 function totalBillCalc(){
 
-    const mealPricePercentage = mealPrice / 100;
-    let totalBill = mealPricePercentage.toFixed(2) * tipAmount;
+    const mealPricePercentage = (mealPrice / 100);
 
-    console.log(`Your total Bill is baout ${totalBill}€. `);
+    console.log(mealPricePercentage)
+
+    let tipPercentage = mealPricePercentage * tipAmount;
+
+    console.log(tipPercentage)
+
+    let totalBill =  mealPrice + tipPercentage;
+
+    console.log(`Your total Bill is about ${totalBill.toFixed(2)}€.`);
 }
 
 totalBillCalc();
