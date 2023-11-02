@@ -20,3 +20,7 @@ console.clear();
 // --v-- write your code here --v--
 
 // --^-- write your code here --^--
+console.log('hello')
+
+const socialMediaTitle = "Social Media";
+const socialMediaText = "Welcome all you people";
