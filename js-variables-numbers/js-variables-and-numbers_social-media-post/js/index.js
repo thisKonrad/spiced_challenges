@@ -16,7 +16,7 @@ console.log('hello')
 const socialMediaTitle = "Social Media";
 const socialMediaText = "Welcome all you people";
 
-const numbersOfLike = 2456;
+let numbersOfLike = 2000;
 
 const socialMediaUser = {
 	
@@ -45,9 +45,9 @@ numbersOfLike++
 console.log(
 "Social Media: ", socialMediaTitle, " ",
 socialMediaText, " ", 
-numbersOfLike, " ", 
-socialMediaUser," ",
-isReported);
+"numbers of likes: ", numbersOfLike, " ", 
+"user: ", socialMediaUser," ",
+"is reported: ", isReported);
 
 // --^-- write your code here --^--
 
