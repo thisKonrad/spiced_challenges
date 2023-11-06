@@ -9,8 +9,9 @@ nextButton.addEventListener("click", () => {
   console.log("Go to next question");
 });
 
-// 2. When clicking the "previous" button, this event listener is not executed. Do you know what's wrong with this code?
-const prevButton = document.querySelector('[data-js="prev-button"]');
+// 2. When clicking the "previous" button, this event listener is not executed. 
+//Do you know what's wrong with this code?
+const prevButton = document.querySelector("[data-js='prev-button']");
 prevButton.addEventListener("prev", () => {
   console.log("Go to previous question");
 });
