@@ -1,40 +1,40 @@
 console.clear();
 
-console.log(Boolean("Try it out"));
+//console.log(Boolean("Try it out"));
 
 
 let number = 2 == "2";
-console.log(Boolean("2==2: ", number));
+console.log("2==2: ", Boolean(number));
 
 number = 2 === "2";
-console.log(Boolean("2==='2': ", number));
+console.log("2==='2': ", Boolean(number));
 
 number = 2 === 2;
-console.log(Boolean("2===2: ", number));
+console.log("2===2: ", Boolean(number));
 
 let message = "hello World";
-console.log(Boolean, message);
+console.log("hello World: ", Boolean(message));
 
 message = "";
-console.log(Boolean," '': ", message);
+console.log(" '': ", Boolean(message));
 
 message = true;
-console.log(Boolean,"true : ", message);
+console.log("true : ", Boolean(message));
 
 number = 0;
-console.log(Boolean,"0: ", number);
+console.log("0: ", Boolean(number));
 
 number = 50;
-console.log(Boolean,"50: ", number);
+console.log("50: ",Boolean(number));
 
 number = -50;
-console.log(Boolean,"-50: ", number);
+console.log("-50: ",Boolean(number));
 
 number = 5 > 1;
-console.log(Boolean,"5 > 1: ", number);
+console.log("5 > 1: ",Boolean(number));
 
 number = 1 > 10;
-console.log(Boolean,"1 > 10: ", number);
+console.log("1 > 10: ",Boolean(number));
 
 message = false;
-console.log(Boolean,"false: ", message);
+console.log("false: ", Boolean(message));
