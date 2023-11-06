@@ -18,16 +18,19 @@ prevButton.addEventListener("prev", () => {
 
 // ------------------ 3 & 4 -----------------
 
-const firstChoiceButton = document.querySelector('[data-js="choice-button-1"]');
-const secondChoiceButton = document.querySelector(
-  '[data-js="choice-button-2"]'
-);
+const firstChoiceButton = document.querySelector("[data-js='choice-button-1']");
+const secondChoiceButton = document.querySelector("[data-js='choice-button-2']");
 
-// 3. This event listener is connected properly. When clicked the button is shown active. However, the debug message doesn't appear in the debug console. Where is the error with this code?
-firstChoiceButton.addEventListener("click", () => {
+// 3. This event listener is connected properly. 
+//When clicked the button is shown active. 
+///However, the debug message doesn't appear in the debug console. 
+//Where is the error with this code?
+firstChoiceButton.addEventListener("click", ()=> {
+
   firstChoiceButton.classList.add("active-choice");
   secondChoiceButton.classList.remove("active-choice");
-  console("Selected first choice");
+  console.log("Selected first choice");
+
 });
 
 // 4. When clicking on the second choice, the button should be shown with an active state. Do you see why it isn't working?
