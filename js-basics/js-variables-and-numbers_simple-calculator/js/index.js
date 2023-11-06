@@ -16,28 +16,44 @@ const moduloButton = document.querySelector('[data-js="modulo"]');
 addButton.addEventListener("click", () => {
   // 1. Add the two operands and store the result in a variable. 
   // Log the variable's value to the console.
-      let addResult = operand1 += operand2;
+      let addResult = operand1 + operand2;
       console.log("Adding Result: ", addResult);
 });
 
 subtractButton.addEventListener("click", () => {
-  // 2. Subtract the two operands and store the result in a variable. Log the variable's value to the console.
+  // 2. Subtract the two operands and store the result in a variable. 
+  //Log the variable's value to the console.
+      let subResult = operand1 - operand2;
+      console.log("Substract Result: ", subResult);
 });
 
 multiplyButton.addEventListener("click", () => {
-  // 3. Multiply the two operands and store the result in a variable. Log the variable's value to the console.
+  // 3. Multiply the two operands and store the result in a variable. 
+  //Log the variable's value to the console.
+      let multiplyResult = operand1 * operand2;
+      console.log("Multiply Result: ", multiplyResult);
+
 });
 
 divideButton.addEventListener("click", () => {
-  // 4. Divide the two operands and store the result in a variable. Log the variable's value to the console.
+  // 4. Divide the two operands and store the result in a variable. 
+  //Log the variable's value to the console.
+  let divideResult = operand1 / operand2;
+  console.log("Divide Result: ", divideResult);
 });
 
 exponentButton.addEventListener("click", () => {
-  // 5. Raise "operand1" to the value of "operand2" and store the result in a variable. Log the variable's value to the console.
+  // 5. Raise "operand1" to the value of "operand2" and store the result in a variable. 
+  // Log the variable's value to the console.
+    let powerResult = Math.pow( operand1, operand2);
+    console.log("Power Result: ", powerResult);
 });
 
 moduloButton.addEventListener("click", () => {
-  // 6. Calculate the remainder when dividing "operand1" by "operand2" and store the result in a variable. Log the variable's value to the console.
+  // 6. Calculate the remainder when dividing "operand1" by "operand2" 
+  //and store the result in a variable. Log the variable's value to the console.
+    let remainderResult = operand1 % operand2;
+    console.log("Remainder Result: ", remainderResult);
 });
 
 /*
