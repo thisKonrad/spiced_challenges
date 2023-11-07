@@ -28,12 +28,19 @@ const ageOfAlex = personAlex.age;
 console.log(nameOfAlex, ", ", ageOfAlex);
 
 // EXERCISE 3
-// Change the value of name to "Alex" and the value of age to "35" by updating the object personToChange: person.existingProperty = newValue.
+// Change the value of name to "Alex" and the value of age to "35" 
+// by updating the object personToChange: person.existingProperty = newValue.
 
 const personToChange = {
   name: "Kim",
   age: 24,
 };
+
+personToChange.name = "Alex";
+personToChange.age = "35";
+
+console.log("PersonToChange: ", personToChange);
+
 
 // EXERCISE 4
 // Add the properties age "5" and breed "husky" to the object petPluto: pet.newProperty = newValue.
