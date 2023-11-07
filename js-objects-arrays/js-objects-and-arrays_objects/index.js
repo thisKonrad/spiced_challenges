@@ -10,16 +10,22 @@ const personWithNameAgeEmail = {
   email: 'johndoe@theinternet.com',
 };
 
+console.log(personWithNameAgeEmail);
+
+
 // EXERCISE 2
-// Set the values of name and age equal to the corresponding values of the personAlex object.
+// Set the values of name and age equal 
+// to the corresponding values of the personAlex object.
 
 const personAlex = {
   name: "Alex",
   age: 24,
 };
 
-const nameOfAlex = "Change me";
-const ageOfAlex = "Change me";
+const nameOfAlex = personAlex.name;
+const ageOfAlex = personAlex.age;
+
+console.log(nameOfAlex, ", ", ageOfAlex);
 
 // EXERCISE 3
 // Change the value of name to "Alex" and the value of age to "35" by updating the object personToChange: person.existingProperty = newValue.
