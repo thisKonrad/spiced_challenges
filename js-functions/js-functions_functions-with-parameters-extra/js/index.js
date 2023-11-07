@@ -6,7 +6,12 @@ console.clear();
    The formula is: square = number * number
 */
 
-function printSquare(number) {}
+function printSquare(number) {
+
+   let squareNumber = number * number;
+
+   console.log("Power of Number: ", squareNumber)
+}
 
 printSquare(3);
 printSquare(5);
