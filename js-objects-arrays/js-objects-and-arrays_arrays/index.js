@@ -39,6 +39,10 @@ console.log(firstNumber);
 
 const fruits = ["apple", "banana", "grapefruit"];
 
+fruits.splice(0, 1, "mango");
+
+console.log(fruits);
+
 // EXERCISE 5
 // Change the value of nestedNumber to equal the fourth number of nestedNumbers using bracket notation.
 
