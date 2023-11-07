@@ -26,9 +26,8 @@ function calculatePizzaGain(diameter1, diameter2){
   const pizzaTwoRadius = diameter2 / 2;
 
   function pizzaArea(r){ 
-    
+
     let area = Math.PI * r;
-    console.log("area:",area);
 
     return area;
 
@@ -38,12 +37,11 @@ function calculatePizzaGain(diameter1, diameter2){
   const pizzaArea2 = pizzaArea(pizzaTwoRadius);
 
   // (area2 - area1) / area1 * 100;
+  let pizzaAreaRelation = Math.round(( pizzaArea2 - pizzaArea1) / pizzaArea1 * 100 );
 
-  console.log("area1: ", pizzaArea1)
-  console.log("area2 ; ", pizzaArea2)
-  let pizzaAreaRelation = ( pizzaArea2 - pizzaArea1) / pizzaArea1 * 100 ;
 
-  console.log("Relation:_ ", pizzaAreaRelation)
+  output.innerText = `${pizzaAreaRelation}`;
+  console.log("Relation:_ ", pizzaAreaRelation);
 
 };
 calculatePizzaGain(400,500)
