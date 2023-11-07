@@ -7,7 +7,7 @@ console.log("Exercise 1:");
 */
 logText();
 // Uncomment the next line of code and figure out why it does not work:
-// logText;
+//logText;
 
 function logText() {
   console.log("This text does not appear. Why?");
@@ -16,7 +16,10 @@ function logText() {
 console.log("-------------");
 console.log("Exercise 2:");
 /*
-2: Look at the functions below. They are almost identical. Can you find a way to generalize them into a new function with an input parameter? Replace the function calls below with your new function.
+2: Look at the functions below. They are almost identical. 
+//Can you find a way to generalize them into a 
+//new function with an input parameter? 
+//Replace the function calls below with your new function.
 */
 
 function greetBob() {
@@ -31,13 +34,20 @@ function greetMary() {
   console.log("Welcome Mary, good to see you again!");
 }
 
-greetAlice();
+/* greetAlice();
 greetBob();
-greetMary();
+greetMary(); */
 
 // --v-- write your code here --v--
 
-function greet() {}
+function greetPerson(person) {
+
+  console.log(`Welcome ${person}, good to see you again!`);
+
+}
+greetPerson('Bob');
+greetPerson('Alice');
+greetPerson('Mary');
 
 // --^-- write your code here --^--
 
