@@ -16,22 +16,37 @@ pizzaInput2.addEventListener("input", () => {
   // write your code here
 });
 
+
+
 // Task 1
 // define the function calculatePizzaGain here
-
 function calculatePizzaGain(diameter1, diameter2){
 
   const pizzaOneRadius = diameter1 / 2;
   const pizzaTwoRadius = diameter2 / 2;
 
-  let pizzaRadius = (r)=>{ Math.PI * r};
+  function pizzaArea(r){ 
+    
+    let area = Math.PI * r;
+    console.log("area:",area);
 
-  console.log(pizzaRadius(pizzaOneRadius));
-  console.log(pizzaRadius(pizzaTwoRadius));
+    return area;
 
- // (area2 - area1) / area1 * 100
+  };
+
+  const pizzaArea1 = pizzaArea(pizzaOneRadius);
+  const pizzaArea2 = pizzaArea(pizzaTwoRadius);
+
+  // (area2 - area1) / area1 * 100;
+
+  console.log("area1: ", pizzaArea1)
+  console.log("area2 ; ", pizzaArea2)
+  let pizzaAreaRelation = ( pizzaArea2 - pizzaArea1) / pizzaArea1 * 100 ;
+
+  console.log("Relation:_ ", pizzaAreaRelation)
 
 };
+calculatePizzaGain(400,500)
 
 // Task 2
 // define the function updatePizzaDisplay here
