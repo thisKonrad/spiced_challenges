@@ -43,12 +43,20 @@ console.log("PersonToChange: ", personToChange);
 
 
 // EXERCISE 4
-// Add the properties age "5" and breed "husky" to the object petPluto: pet.newProperty = newValue.
+// Add the properties age "5" and breed "husky" 
+// to the object petPluto: pet.newProperty = newValue.
 
 const petPluto = {
   name: "Pluto",
   species: "dog",
 };
+
+petPluto.age = 5;
+petPluto.breed = "husky";
+
+console.log(petPluto);
+
+
 
 export {
   personWithNameAgeEmail,
