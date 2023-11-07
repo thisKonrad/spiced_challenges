@@ -4,6 +4,13 @@ console.clear();
 // Modify the array exampleArray so that it contains a number and a string.
 
 const exampleArray = [true];
+const myString = "Peter Paul and Jenny";
+const myNumber = 42;
+exampleArray.push(myString);
+exampleArray.push(myNumber);
+
+console.log(exampleArray);
+
 
 // EXERCISE 2
 // Nest an array inside array nestedArray. After that nestedArray should contain an array as an element.
