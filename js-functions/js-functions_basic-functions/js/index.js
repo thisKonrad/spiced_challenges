@@ -8,8 +8,12 @@ console.clear();
   - the number of sales
 */
 
-// --v-- write your code here --v--
 
+// --v-- write your code here --v--
+const bookTitle = "The End Of Ooz";
+const bookAuthor = "Patrica Letterman";
+const bookRating = 504;
+const bookNumberSales = 12899;
 // --^-- write your code here --^--
 
 /*
