@@ -47,15 +47,19 @@ console.log(fruits);
 // EXERCISE 5
 // Change the value of nestedNumber to equal 
 // the fourth number of nestedNumbers using bracket notation.
-
 const nestedNumbers = [10, [20, 30, [40, 50]]];
 
 const nestedNumber = nestedNumbers[1][2][0];
 console.log(nestedNumber);
+
+
 // EXERCISE 6
 // Put "rat" onto the end of petsWithPush variable by using the array method `.push()`.
-
 const petsWithPush = ["dog", "cat", "rabbit"];
+const theRat = "rat";
+petsWithPush.push(theRat);
+
+console.log(petsWithPush);
 
 // EXERCISE 7
 // Use the pop method to remove the last item from fruitsWithPop.
