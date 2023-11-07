@@ -29,6 +29,10 @@ Then log all variables to the console again.
 */
 
 // --v-- write your code here --v--
+console.log("book Title: ", bookTitle);
+console.log("Author: ", bookAuthor);
+console.log("Rating: ", bookRating);
+console.log("Number of sales: ", bookNumberSales);
 
 // --^-- write your code here --^--
 
