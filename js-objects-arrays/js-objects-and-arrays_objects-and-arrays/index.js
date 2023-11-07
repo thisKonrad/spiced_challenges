@@ -66,13 +66,16 @@ console.log(homersOtherFriends);
 // Change the value of the variable ageOfThirdPerson 
 // to equal the age of the third person.
 
-const ageOfThirdPerson = people[1].name;
+const ageOfThirdPerson = people[1].age;
 console.log(ageOfThirdPerson);
 
 // EXERCISE 4
-// Change the value of the variable mothersNameOfSecondPerson to equal the mothers name of the second person.
+// Change the value of the variable 
+//mothersNameOfSecondPerson to equal 
+//the mothers name of the second person.
 
-const mothersNameOfSecondPerson = "change me";
+const mothersNameOfSecondPerson = people[1].parents.mothersName;
+console.log(mothersNameOfSecondPerson)
 
 // EXERCISE 5
 // Change the value of the variable animaltypeOfLisasPet to equal the type of animal of Lisas pet.
