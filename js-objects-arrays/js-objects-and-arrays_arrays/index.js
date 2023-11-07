@@ -61,10 +61,14 @@ petsWithPush.push(theRat);
 
 console.log(petsWithPush);
 
+
 // EXERCISE 7
 // Use the pop method to remove the last item from fruitsWithPop.
-
 const fruitsWithPop = ["apple", "banana", "mango"];
+const lessFruits = fruitsWithPop.pop();
+console.log(lessFruits, " ", fruitsWithPop);
+
+
 
 // EXERCISE 8
 // Put "hamster" onto the start of unshiftedPets variable by using the array method unshift.
