@@ -19,17 +19,20 @@ console.log(exampleArray);
 const nestedArray = ["example", 10, true];
 const doubleNumbers = [44,55,66];
 
-nestedArray.shift(doubleNumbers);
+nestedArray.unshift(doubleNumbers);
 
 console.log(nestedArray);
 
 
 // EXERCISE 3
-// Change the value of firstNumber to equal the first value of the numbers array using bracket notation.
+// Change the value of firstNumber to equal 
+// the first value of the numbers array using bracket notation.
 
 const numbers = [20, 10, 50];
 
-const firstNumber = "change me";
+const firstNumber = numbers[0];
+
+console.log(firstNumber);
 
 // EXERCISE 4
 // Change the fruit stored at index 0 of fruits to mango.
