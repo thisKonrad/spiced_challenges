@@ -13,7 +13,7 @@ console.clear();
 const bookTitle = "The End Of Ooz";
 const bookAuthor = "Patrica Letterman";
 const bookRating = 504;
-const bookNumberSales = 12899;
+const bookNumberSales = 12900;
 // --^-- write your code here --^--
 
 /*
@@ -29,10 +29,10 @@ Then log all variables to the console again.
 */
 
 // --v-- write your code here --v--
-console.log("book Title: ", bookTitle);
-console.log("Author: ", bookAuthor);
-console.log("Rating: ", bookRating);
-console.log("Number of sales: ", bookNumberSales);
+/**console.log("book Title: ", bookTitle);
+* console.log("Author: ", bookAuthor);
+* console.log("Rating: ", bookRating);
+* console.log("Number of sales: ", bookNumberSales);*/
 
 lockBoookData(bookTitle, bookAuthor, bookRating, bookNumberSales);
 
@@ -50,7 +50,14 @@ lockBoookData(bookTitle, bookAuthor, bookRating, bookNumberSales);
 
 function lockBoookData(title, author, rating, sales) {
 
-    sales += 2;
+    sales++;
+
+    console.log("Number of sales: ", sales);
+
+
+    sales++;
+
+    console.log("Number of sales: ", sales);
 
     console.log(`Book Title: ${title},
     Author: ${author}, Rating: ${rating}, Number of sales: ${sales}`);
