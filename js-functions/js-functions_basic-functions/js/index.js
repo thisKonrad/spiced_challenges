@@ -34,6 +34,8 @@ console.log("Author: ", bookAuthor);
 console.log("Rating: ", bookRating);
 console.log("Number of sales: ", bookNumberSales);
 
+lockBoookData(bookTitle, bookAuthor, bookRating, bookNumberSales);
+
 // --^-- write your code here --^--
 
 /*
@@ -45,5 +47,15 @@ console.log("Number of sales: ", bookNumberSales);
 */
 
 // --v-- write your code here --v--
+
+function lockBoookData(title, author, rating, sales) {
+
+    sales += 2;
+
+    console.log(`Book Title: ${title},
+    Author: ${author}, Rating: ${rating}, Number of sales: ${sales}`);
+
+};
+
 
 // --^-- write your code here --^--
