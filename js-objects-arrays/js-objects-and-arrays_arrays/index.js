@@ -43,13 +43,15 @@ fruits.splice(0, 1, "mango");
 
 console.log(fruits);
 
+
 // EXERCISE 5
-// Change the value of nestedNumber to equal the fourth number of nestedNumbers using bracket notation.
+// Change the value of nestedNumber to equal 
+// the fourth number of nestedNumbers using bracket notation.
 
 const nestedNumbers = [10, [20, 30, [40, 50]]];
 
-const nestedNumber = "change me";
-
+const nestedNumber = nestedNumbers[1][2][0];
+console.log(nestedNumber);
 // EXERCISE 6
 // Put "rat" onto the end of petsWithPush variable by using the array method `.push()`.
 
