@@ -77,10 +77,15 @@ console.log(ageOfThirdPerson);
 const mothersNameOfSecondPerson = people[1].parents.mothersName;
 console.log(mothersNameOfSecondPerson)
 
-// EXERCISE 5
-// Change the value of the variable animaltypeOfLisasPet to equal the type of animal of Lisas pet.
 
-const animaltypeOfLisasPet = "change me";
+// EXERCISE 5
+// Change the value of the variable 
+// animaltypeOfLisasPet to equal the type of animal of Lisas pet.
+
+const animaltypeOfLisasPet = people[3].pet.animal;
+console.log(animaltypeOfLisasPet);
+
+
 
 export {
   nameOfFirstPerson,
