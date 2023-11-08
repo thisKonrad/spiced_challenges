@@ -36,7 +36,8 @@ function remainder(a, b) {
 }
 
 /*
-These console.asserts check if your functions are correct. If nothing appears in your console it works properly!
+These console.asserts check if your functions are correct. 
+If nothing appears in your console it works properly!
 */
 
 console.assert(
