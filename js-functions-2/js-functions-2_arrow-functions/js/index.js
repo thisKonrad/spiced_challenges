@@ -34,14 +34,16 @@ let getCurrentHour = ( currentHour)=>{
 };
 
 
-
-function getVectorLength(x, y, z) {
+/* function getVectorLength(x, y, z) {
   return (x ** 2 + y ** 2 + z ** 2) ** 0.5;
-}
+} */
 
-function cleanInput(string) {
+let getVectorLength = (x,y,z)=>{ return (x ** 2 + y ** 2 + z ** 2) ** 0.5;}
+
+/* function cleanInput(string) {
   return string.toLowerCase().trim();
-}
+} */
+let cleanInput = (string)=>{return string.toLowerCase().trim();};
 
 /*
 Rewrite the following arrow functions as classic functions.
