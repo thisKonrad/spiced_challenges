@@ -4,50 +4,91 @@ console.clear();
 // Modify the array exampleArray so that it contains a number and a string.
 
 const exampleArray = [true];
+const myString = "Peter Paul and Jenny";
+const myNumber = 42;
+exampleArray.push(myString);
+exampleArray.push(myNumber);
+
+console.log(exampleArray);
+
 
 // EXERCISE 2
-// Nest an array inside array nestedArray. After that nestedArray should contain an array as an element.
+// Nest an array inside array nestedArray. 
+//After that nestedArray should contain an array as an element.
 
 const nestedArray = ["example", 10, true];
+const doubleNumbers = [44,55,66];
+
+nestedArray.unshift(doubleNumbers);
+
+console.log(nestedArray);
+
 
 // EXERCISE 3
-// Change the value of firstNumber to equal the first value of the numbers array using bracket notation.
+// Change the value of firstNumber to equal 
+// the first value of the numbers array using bracket notation.
 
 const numbers = [20, 10, 50];
 
-const firstNumber = "change me";
+const firstNumber = numbers[0];
+
+console.log(firstNumber);
 
 // EXERCISE 4
 // Change the fruit stored at index 0 of fruits to mango.
 
 const fruits = ["apple", "banana", "grapefruit"];
 
-// EXERCISE 5
-// Change the value of nestedNumber to equal the fourth number of nestedNumbers using bracket notation.
+fruits.splice(0, 1, "mango");
 
+console.log(fruits);
+
+
+// EXERCISE 5
+// Change the value of nestedNumber to equal 
+// the fourth number of nestedNumbers using bracket notation.
 const nestedNumbers = [10, [20, 30, [40, 50]]];
 
-const nestedNumber = "change me";
+const nestedNumber = nestedNumbers[1][2][0];
+console.log(nestedNumber);
+
 
 // EXERCISE 6
 // Put "rat" onto the end of petsWithPush variable by using the array method `.push()`.
-
 const petsWithPush = ["dog", "cat", "rabbit"];
+const theRat = "rat";
+petsWithPush.push(theRat);
+
+console.log(petsWithPush);
+
 
 // EXERCISE 7
 // Use the pop method to remove the last item from fruitsWithPop.
-
 const fruitsWithPop = ["apple", "banana", "mango"];
+const lessFruits = fruitsWithPop.pop();
+console.log(lessFruits, ", ", fruitsWithPop);
+
+
 
 // EXERCISE 8
 // Put "hamster" onto the start of unshiftedPets variable by using the array method unshift.
-
 const unshiftedPets = ["dog", "cat", "rabbit"];
+const theHamster = "hamster";
+
+unshiftedPets.unshift(theHamster);
+console.log(unshiftedPets);
+
 
 // EXERCISE 9
 // Use the shift method to remove the first item from shiftedFruits.
 
 const shiftedFruits = ["apple", "banana", "mango"];
+const lessFruitsAgain = shiftedFruits.shift();
+
+console.log(lessFruitsAgain, " ,", shiftedFruits);
+
+
+
 
 export {
   exampleArray,

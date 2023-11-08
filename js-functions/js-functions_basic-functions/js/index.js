@@ -8,8 +8,12 @@ console.clear();
   - the number of sales
 */
 
-// --v-- write your code here --v--
 
+// --v-- write your code here --v--
+const bookTitle = "The End Of Ooz";
+const bookAuthor = "Patrica Letterman";
+const bookRating = 504;
+const bookNumberSales = 12900;
 // --^-- write your code here --^--
 
 /*
@@ -25,6 +29,12 @@ Then log all variables to the console again.
 */
 
 // --v-- write your code here --v--
+/**console.log("book Title: ", bookTitle);
+* console.log("Author: ", bookAuthor);
+* console.log("Rating: ", bookRating);
+* console.log("Number of sales: ", bookNumberSales);*/
+
+lockBoookData(bookTitle, bookAuthor, bookRating, bookNumberSales);
 
 // --^-- write your code here --^--
 
@@ -37,5 +47,22 @@ Then log all variables to the console again.
 */
 
 // --v-- write your code here --v--
+
+function lockBoookData(title, author, rating, sales) {
+
+    sales++;
+
+    console.log("Number of sales: ", sales);
+
+
+    sales++;
+
+    console.log("Number of sales: ", sales);
+
+    console.log(`Book Title: ${title},
+    Author: ${author}, Rating: ${rating}, Number of sales: ${sales}`);
+
+};
+
 
 // --^-- write your code here --^--
