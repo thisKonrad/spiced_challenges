@@ -38,15 +38,15 @@ function getGreeting() {
       currentHour <= 18) {
       return "Good Afternoon";
     }
-  if( currentHour >= 6 &&
-      currentHour <= 12) {
-      return "Good Morning";
+  if( currentHour >= 19 &&
+      currentHour <= 22) {
+      return "Good Evening";
     }
-
- 
-
-}
-getGreeting()
+  if( currentHour >= 23 &&
+      currentHour <= 5) {
+      return "Good Night";
+    };
+};
 
 
 function getDayColor() {
@@ -57,30 +57,34 @@ function getDayColor() {
   console.log("Day: ",currentDay);
 
 
-    if(currentDay ==  0 ){
+    if(currentDay ===  0 ){
       body.style.backgroundColor = "red";
     } 
-    if(currentDay ==  1 ){
+    if(currentDay ===  1 ){
       body.style.backgroundColor = "yellow";
     }
-    if(currentDay ==  2 ){
+    if(currentDay ===  2 ){
       body.style.backgroundColor = "seagreen";
     }
-    if(currentDay ==  3 ){
+    if(currentDay ===  3 ){
       body.style.backgroundColor = "violet";
     }
-    if(currentDay ==  4 ){
+    if(currentDay ===  4 ){
       body.style.backgroundColor = "hotpink";
     } 
-    if(currentDay ==  5 ){
+    if(currentDay ===  5 ){
       body.style.backgroundColor = "gainsboro";
     }
-    if(currentDay ==  6 ){
+    if(currentDay ===  6 ){
       body.style.backgroundColor = "lightblue";
     }
 
 }
 getDayColor();
+
+display.textContent = getGreeting();
+
+
 /* 
 display.textContent = getGreeting();
 document.body.style.backgroundColor = getDayColor(); */
