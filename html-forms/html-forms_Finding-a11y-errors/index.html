@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Forms and A11y</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+
+    <fieldset>
+      <legend>Understanding A11y in Forms</legend>
+
+      <p id="description" name="formular description">Please let us know how we can 
+      support you with a11y issues.</p>
+
+      <form aria-describedby="personal information formular">
+
+          <legend>Enter your information</legend>
+          <label aria-describedby="name-input">Name:</label>
+          <input id="name-Input" type="text" name="enter your name" />
+
+          <label for="age-input" aria-describedby="enter your name">Age:</label>
+          <input id="age-Input" type="text" name="your age" />
+
+          <label for="color-Input" aria-describedby="color-input">Color you cannot see:</label>
+          <input id="color-Input" type="color" name="choose favourite color" />
+
+          <label for="text">Leave a message: </label>
+          <textarea id="text" rows="7" name="leave a message" placeholder="Leave us a message..."></textarea>
+
+          <label for="sendBtn"></label>
+          <button id="sendBtn" type="submit" name="submit button">Submit</button>
+
+          </form>
+
+        </fieldset>
+    
+  </body>
+</html>
