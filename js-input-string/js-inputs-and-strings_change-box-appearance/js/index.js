@@ -11,6 +11,7 @@ hsl() functional notation for colors.
 – [ ] When the slider control of inputRadius is moved, 
 change the border radius of the box. If the control reaches the right end, 
 make the box look like a circle.
+
 – [ ] When the slider control of inputRotation is moved, 
 rotate the box. Hint: You may need to work with the CSS property 
 "transform" and a value that contains "rotate" and "deg".
@@ -28,7 +29,7 @@ For further information check MDN:
 const box = document.querySelector('.box');
 
 const colorRange = document.querySelector('[data-js="input-color"]');
-const radius = document.querySelector('[data-js="input-radius"]');
+const radiusRange = document.querySelector('[data-js="input-radius"]');
 const rotation = document.querySelector('[data-js="input-rotation"]');
 
 
@@ -36,12 +37,18 @@ colorRange.addEventListener('input',()=>{
 
     let rangeValue = colorRange.value;
 
-        console.log(rangeValue)
-        //let randomHSL = Math.floor(Math.random()*100);
-        //console.log(randomHSL);
-        box.style.backgroundColor = `hsl(${rangeValue}, 70%, 80%)`;
+    box.style.backgroundColor = `hsl(${rangeValue}, 70%, 80%)`;
 
-})
+});
+
+
+radiusRange.addEventListener('input',()=>{
+
+    let radiusValue = radiusRange.value;
+
+    box.style.borderRadius = `${radiusValue}%`;
+
+});
 
 
 
