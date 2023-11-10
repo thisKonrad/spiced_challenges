@@ -3,37 +3,51 @@ console.clear();
 const form = document.querySelector('[data-js="form"]');
 const tosError = document.querySelector('[data-js="tos-error"]');
 const tosCheckbox = document.querySelector('[data-js="tos"]');
-const successMessage = document.querySelector('[data-js="success"}');
+const successMessage = document.querySelector('[data-js="success"]');
 
 
-
-tosCheckbox.addEventListener('change',()=>{
-  hideTosError()
+tosCheckbox.addEventListener('input',(e)=>{
+  console.log(e.target);
+  if(e.target.checked){
+    hideTosError()
+    return;
+  }
+  else 
+  {
+    showTosError();
+  }
 });
 
-function hideTosError() {
+function hideTosError(){
+  tosError.setAttribute("hidden","");
+}; 
 
-  if(tosCheckbox.checked) {
-    tosError.style.visibility = "hidden";
-  }
-  else {
-    tosError.style.visibility = "visible";
-  }
-
+function showTosError(){
+  tosError.removeAttribute("hidden");
 };
+
+function hideSuccess(){successMessage.setAttribute("hidden", "")}; 
+hideSuccess();
+
+function showSuccess(){successMessage.removeAttribute("hidden")};
 
 
 form.addEventListener("submit", (e) => {
 
   e.preventDefault();
-  // --v-- write your code here --v--
 
   const formData = new FormData(e.target);
   const data = Object.fromEntries(formData);
+
   console.log(data);
 
-    alert("Form submitted");
+  if(tosCheckbox.checked) {
+    showSuccess();
+    alert("form submittet");
+  };
 
-  e.target.reset();
+
+
+  e.target.reset(); 
 
 });
