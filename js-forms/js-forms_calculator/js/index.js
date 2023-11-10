@@ -2,29 +2,52 @@ console.clear();
 
 const form = document.querySelector('[data-js="form"]');
 const resultOutput = document.querySelector('[data-js="result"]');
-const numA = documnet.querySelector('#number-a').value;
-const numB = documnet.querySelector('#number-b').value;
+const numberA = document.querySelector('#number-a');
+const numberB = document.querySelector('#number-b');
 
-function add(a, b) {
-  return a + b;
+/*values:*/
+numA = numberA.value;
+numB = numberB.value;
+
+/* operators: */
+const addOP = document.querySelector('#addition');
+const subsOp = document.querySelector('#subtraction');
+const multOp = document.querySelector('#multiplication');
+const divOP = document.querySelector('#division');
+
+
+function calculate(a,b){
+
+  let result;
+
+
+  if(addOP.checked){
+    /* why *1? = because it cncatenates elswise...*/
+    result = (a*1) + (b*1);
+    resultOutput.textContent = result;
+  }
+  if(subsOp.checked){
+    result = a -= b;
+    resultOutput.textContent = result;
+  }
+  if(multOp.checked){
+    result = a *= b;
+    resultOutput.textContent = result;
+  }
+  if(divOP.checked){
+    result = a / b;
+    resultOutput.textContent = result;
+  }
 }
-function subtract(a, b) {
-  return a - b;
-}
-function multiply(a, b) {
-  return a * b;
-}
-function divide(a, b) {
-  return a / b;
-}
+
 
 form.addEventListener("submit", (event) => {
 
   event.preventDefault();
 
-  let result;
+  numA = numberA.value;
+  numB = numberB.value;
 
-  result = add(numA,numB),subtract(numA,numB),multiply(numA,numB),divide(numA,numB);
+  calculate(numA,numB);
 
-  resultOutput.textContent = result;
 });
