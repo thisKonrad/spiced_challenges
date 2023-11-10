@@ -3,6 +3,8 @@ console.clear();
 const form = document.querySelector('[data-js="form"]');
 const tosError = document.querySelector('[data-js="tos-error"]');
 const tosCheckbox = document.querySelector('[data-js="tos"]');
+const successMessage = document.querySelector('[data-js="success"}');
+
 
 
 tosCheckbox.addEventListener('change',()=>{
@@ -21,18 +23,6 @@ function hideTosError() {
 };
 
 
-
-/* function showTosError() {
-
-  if(tosCheckbox.checked = true) {
-    //tosError.removeAttribute("hidden",false);
-    tosError.setAttribute("hidden", true);
-  }
-
-}; */
-
-
-
 form.addEventListener("submit", (e) => {
 
   e.preventDefault();
@@ -42,7 +32,7 @@ form.addEventListener("submit", (e) => {
   const data = Object.fromEntries(formData);
   console.log(data);
 
-  alert("Form submitted");
+    alert("Form submitted");
 
   e.target.reset();
 
