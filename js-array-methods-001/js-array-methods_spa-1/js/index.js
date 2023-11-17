@@ -1,4 +1,4 @@
-const linkHome = document.querySelector('[data-js="link-home"]');
+/* const linkHome = document.querySelector('[data-js="link-home"]');
 const linkBookmarked = document.querySelector('[data-js="link-bookmarked"]');
 const linkCreate = document.querySelector('[data-js="link-create"]');
 const linkProfile = document.querySelector('[data-js="link-profile"]');
@@ -6,8 +6,24 @@ const linkProfile = document.querySelector('[data-js="link-profile"]');
 const pageHome = document.querySelector('[data-js="page-home"]');
 const pageBookmarked = document.querySelector('[data-js="page-bookmarked"]');
 const pageCreate = document.querySelector('[data-js="page-create"]');
-const pageProfile = document.querySelector('[data-js="page-profile"]');
+const pageProfile = document.querySelector('[data-js="page-profile"]'); */
 
+/*konrad---my solution: here:*/
+const navLinks = document.querySelectorAll('.center');
+const pageElements = document.querySelectorAll('.page');
+
+console.log(pageElements)
+
+navLinks.forEach((navElem)=>{
+  navElem.addEventListener('click',()=> {
+    pageElements.forEach((pageElem)=>{pageElem.classList.toggle('current')});
+  })
+});
+/* konrad solution.------------------*/
+
+
+
+/* 
 linkHome.addEventListener("click", () => {
   pageHome.classList.add("current");
   pageBookmarked.classList.remove("current");
@@ -35,3 +51,4 @@ linkProfile.addEventListener("click", () => {
   pageCreate.classList.remove("current");
   pageProfile.classList.add("current");
 });
+ */
