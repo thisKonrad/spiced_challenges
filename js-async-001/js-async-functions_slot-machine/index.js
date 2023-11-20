@@ -25,7 +25,6 @@ spinButton.addEventListener("click", async () => {
 
   spinButton.disabled = true;
 
-  async function wheelStart() {
     try {
       result.setSpinning()
       const values = await Promise.all([
@@ -43,20 +42,20 @@ spinButton.addEventListener("click", async () => {
       if( sameSymbols === 3){
         result.setResult(100);
       }
-      if( sameSymbols < 1){
+      if( sameSymbols < 2){
         result.setResult(0);
       }
 
-    } catch (error) {
-      console.error(error);
+    } 
+    catch {
       result.setMachineChoked();
-    } finally {
-
+    } 
+    finally {
       spinButton.disabled = false;
     }
 
   }
-  wheelStart();
+
 
   /**
    * Hint 1:
@@ -100,7 +99,7 @@ spinButton.addEventListener("click", async () => {
    */
 
   //spinButton.disabled = false;
-});
+);
 
 /**
  * Bonus hint:
