@@ -9,6 +9,7 @@ const startRaceButton = document.querySelector('[data-js="start-race-button"]');
 // You'll need to change something about this callback function:
 //                                         ↙️
 startRaceButton.addEventListener("click", () => {
+
   startRaceButton.setAttribute("disabled", "");
 
   /**
@@ -20,11 +21,17 @@ startRaceButton.addEventListener("click", () => {
    * Use `animateRunner(runnerX)` to animate the runners.
    *
    * Hint 3:
-   * The `animateRunner` function returns a promise which resolves when the animation is done.
+   * The `animateRunner` function returns a promise which 
+   * resolves when the animation is done.
    **/
 
   // --v-- write your code here --v--
-
+  async function startRunners() {
+    const value1 = await  animateRunner(runner1);
+    const value2 = await  animateRunner(runner2);
+    const value3 = await  animateRunner(runner3);
+  }
+  startRunners();
   // --^-- write your code here --^--
 
   startRaceButton.removeAttribute("disabled");
@@ -40,4 +47,4 @@ function animateRunner(runnerElement) {
     [{ translate: "0 0" }, { translate: "180px 0" }],
     { duration: 2000, fill: "forwards" }
   ).finished;
-}
+};
