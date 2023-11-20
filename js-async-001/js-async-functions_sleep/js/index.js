@@ -7,10 +7,14 @@ const body = document.body;
 // --v-- code here --v--
 
 button3.addEventListener("click", async () => {
+  async function sleep3Seconds() {
+    await sleep(3);
+    icon.textContent = "⏰";
+  }
+  sleep3Seconds()
   icon.textContent = "💤";
-  sleep(3);
-  icon.textContent = "⏰";
 });
+
 
 button5.addEventListener("click", () => {
   icon.textContent = "💤";
@@ -24,7 +28,10 @@ function handleSleepFor10Button() {
 
 button10.addEventListener("click", handleSleepFor10Button);
 
+
 // --^-- code here --^--
+
+
 
 // returns a Promise that resolves after x seconds
 function sleep(seconds) {
