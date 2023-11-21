@@ -9,7 +9,7 @@ const company = {
   course: "Web Development",
   location: "Berlin",
 };
-export const {name} = company;
+export const {course} = company;
 
 // example: export const {value1} = myObject;
 
@@ -37,9 +37,9 @@ const dog = {
   age: 5,
 };
 
-export const {name = dogname} = dog;
-export const {breed = dogBreed} = dog;
-export const { age = dogAge} = dog;
+export const { name: dogname} = dog;
+export const { breed: dogBreed} = dog;
+export const { age: dogAge} = dog;
 // EXERCISE 4
 // Extract the 'lastName' property from the person object as "personLastName".
 // Store all other properties in an object called "moreInformation".
