@@ -23,11 +23,18 @@ export default function App() {
     name: '🫐 Blueberries',
     color: 'blue',
   },
+  {
+    id: 5,
+    name: '🥥 Cocnut',
+    color: 'inside white',
+  },
 ];
+
 
   return (
     <div className="app">
-      <Card name="🍌 banana" />
+      <Card name={fruits.map(({id,name,color})=> 
+      <p key={id} > name: {name}, color: {color}</p>)} />
     </div>
   );
 }
