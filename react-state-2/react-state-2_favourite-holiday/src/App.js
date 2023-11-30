@@ -10,9 +10,17 @@ export default function App() {
   let[date,setDate]=useState('');
 
   function handleSubmit(event) {
+
     event.preventDefault();
     setHoliday(event.target.elements.holiday.value)
     setDate(event.target.elements.date.value)
+
+    event.target.elements.holiday.value = ' ';
+
+    event.target.elements.date.value = null;
+
+    event.target.elements.holiday.focus()
+
   }
 
   return (
