@@ -8,6 +8,7 @@
 }
 
 .status-check__button {
+  cursor: pointer;
   border: none;
   background-color: var(--color-nemo);
   color: var(--color-foam);
