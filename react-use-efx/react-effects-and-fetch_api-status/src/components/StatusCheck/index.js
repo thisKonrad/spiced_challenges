@@ -1,33 +1,55 @@
 import "./StatusCheck.css";
+import { useState} from 'react';
 
-const apiStatusUrl = "https://example-apis.vercel.app/api/status";
+
+//const apiStatusUrl = "https://example-apis.vercel.app/api/status";
 
 export default function StatusCheck() {
+
   const statusIcon = "⁉️";
-  // Something needs to change here…
-  // ↙️
-  function handleCheckApiStatus() {
-    /**
-     * Hint 1:
-     * Use the `fetch()` function and pass the `apiStatusUrl` into it
-     *
-     * Hint 2:
-     * The fetch function returns a promise which resolves to a Response
-     * object once it is ready.
-     *
-     * Hint 3:
-     * The Response object has a `ok` property which is true if the response
-     * is okay and false if it is not.
-     **/
-    // --v-- write your code here --v--
-    // --^-- write your code here --^--
-  }
+  const statusOk = "✅";
+  const statusBad = "❌"; 
+  const statusWait = "⏳"; 
+  const statusAlert = "🚨";
+
+  const[apiState, setApiState]= useState(statusIcon);
+
+  const[apiInfo, setApiInfo]= useState('');
+
+/*   useEffect(() => {
+      handleCheckApiStatus()
+  }); */
+  
+  async function handleCheckApiStatus() {
+
+    try{
+      const response = await fetch(`https://example-apis.vercel.app/api/status`);
+      const data = await response.json();
+
+      console.log("data ", data)
+      console.log("ok: ",data.status)
+
+      setApiInfo(`${data.status}`)
+
+      if(!data){
+        setApiState(statusWait)
+      }
+      else {data.status === 'Ok' ? setApiState(statusOk) : setApiState(statusBad);}
+
+      }
+      catch (error){
+        console.log(error);
+        return setApiState(statusAlert)
+      }
+      
+    }      
+  
 
   return (
     <article className="status-check">
       <div className="status-check__wrapper">
         <h2 className="status-check__heading">Status:</h2>
-        <span className="status-check__icon">{statusIcon}</span>
+        <span className="status-check__icon">{apiState}</span>
       </div>
       <button
         type="button"
@@ -36,6 +58,8 @@ export default function StatusCheck() {
       >
         Check API Status
       </button>
+      <br></br>
+      <h2 style={{textAlign:'center'}}>{apiInfo}</h2>
     </article>
   );
 }
